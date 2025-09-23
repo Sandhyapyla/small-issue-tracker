@@ -1,0 +1,55 @@
+{
+  "next_id": 6,
+  "issues": [
+    {
+      "id": 1,
+      "title": "Sample bug: Login button misaligned",
+      "description": "On mobile Safari, login button overlaps footer.",
+      "status": "open",
+      "priority": "medium",
+      "assignee": "Anirudh",
+      "createdAt": "2025-09-23T14:11:36.465754+00:00",
+      "updatedAt": "2025-09-23T15:48:02.909146+00:00"
+    },
+    {
+      "id": 2,
+      "title": "Feature: Add export to CSV",
+      "description": "Allow exporting issues to CSV from list page.",
+      "status": "in_progress",
+      "priority": "high",
+      "assignee": "Vidhanshu",
+      "createdAt": "2025-09-23T14:11:36.465754+00:00",
+      "updatedAt": "2025-09-23T15:41:22.522014+00:00"
+    },
+    {
+      "id": 3,
+      "title": "Login button not working",
+      "description": "Clicking the login button does nothing on Chrome browser",
+      "status": "open",
+      "priority": "medium",
+      "assignee": "Rosy",
+      "createdAt": "2025-09-23T15:16:19.579876+00:00",
+      "updatedAt": "2025-09-23T15:23:10.008127+00:00"
+    },
+    {
+      "id": 4,
+      "title": "Signup page validation error",
+      "description": "Form allows invalid email addresses and shows no error message.",
+      "status": "open",
+      "priority": "high",
+      "assignee": "Justin",
+      "createdAt": "2025-09-23T15:24:45.457289+00:00",
+      "updatedAt": "2025-09-23T15:24:45.457289+00:00"
+    },
+    {
+      "id": 5,
+      "title": "Profile picture upload failing",
+      "description": "Users cannot upload profile pictures; file input shows error 500.",
+      "status": "in_progress",
+      "priority": "medium",
+      "assignee": "Suhasini",
+      "createdAt": "2025-09-23T15:42:54.603162+00:00",
+      "updatedAt": "2025-09-23T15:42:54.603162+00:00"
+    }
+  ]
+}

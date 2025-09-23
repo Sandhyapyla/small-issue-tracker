@@ -1,0 +1,38 @@
+<mat-card>
+  <h3>{{ isEdit ? 'Edit Issue' : 'Create Issue' }}</h3>
+  <form (ngSubmit)="save()" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px;">
+    <mat-form-field appearance="outline">
+      <mat-label>Title</mat-label>
+      <input matInput [(ngModel)]="model.title" name="title" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" style="grid-column: 1 / -1;">
+      <mat-label>Description</mat-label>
+      <textarea matInput rows="4" [(ngModel)]="model.description" name="description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Status</mat-label>
+      <mat-select [(ngModel)]="model.status" name="status">
+        <mat-option *ngFor="let s of statuses" [value]="s">{{s}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Priority</mat-label>
+      <mat-select [(ngModel)]="model.priority" name="priority">
+        <mat-option *ngFor="let p of priorities" [value]="p">{{p}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Assignee</mat-label>
+      <input matInput [(ngModel)]="model.assignee" name="assignee" />
+    </mat-form-field>
+
+    <div style="grid-column: 1 / -1; display:flex; gap:12px; justify-content:flex-end;">
+      <button mat-stroked-button type="button" (click)="cancel()">Cancel</button>
+      <button mat-raised-button color="primary" type="submit" [disabled]="saving">{{ isEdit ? 'Update' : 'Create' }}</button>
+    </div>
+  </form>
+</mat-card>

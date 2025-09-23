@@ -1,0 +1,11 @@
+<mat-card>
+  <div style="display:flex; align-items:center; justify-content:space-between;">
+    <h3 style="margin:0;">Issue Detail</h3>
+    <div>
+      <a *ngIf="issue" mat-stroked-button color="primary" [routerLink]="['/issues', issue.id, 'edit']">Edit</a>
+      <button mat-button (click)="back()">Back</button>
+    </div>
+  </div>
+  <pre *ngIf="issue" style="white-space: pre-wrap;">{{ issue | json }}</pre>
+  <div *ngIf="loading">Loading...</div>
+</mat-card>
