@@ -1,5 +1,5 @@
 {
-  "next_id": 6,
+  "next_id": 9,
   "issues": [
     {
       "id": 1,
@@ -50,6 +50,36 @@
       "assignee": "Suhasini",
       "createdAt": "2025-09-23T15:42:54.603162+00:00",
       "updatedAt": "2025-09-23T15:42:54.603162+00:00"
+    },
+    {
+      "id": 6,
+      "title": "Test Issue",
+      "description": "This is a test issue",
+      "status": "open",
+      "priority": "medium",
+      "assignee": "Sandhya",
+      "createdAt": "2025-09-24T15:17:56.136649+00:00",
+      "updatedAt": "2025-09-24T15:18:21.172408+00:00"
+    },
+    {
+      "id": 7,
+      "title": "Test Issue",
+      "description": "This is a test issue",
+      "status": "open",
+      "priority": "medium",
+      "assignee": "Murali",
+      "createdAt": "2025-09-24T15:19:40.369197+00:00",
+      "updatedAt": "2025-09-24T15:19:59.914833+00:00"
+    },
+    {
+      "id": 8,
+      "title": "Dashboard graphs not loading",
+      "description": "When navigating to the dashboard, the graphs fail to load and show a blank section. Happens on Chrome and Firefox.",
+      "status": "resolved",
+      "priority": "low",
+      "assignee": "Sravani",
+      "createdAt": "2025-09-24T15:23:24.452525+00:00",
+      "updatedAt": "2025-09-24T15:23:41.952956+00:00"
     }
   ]
 }

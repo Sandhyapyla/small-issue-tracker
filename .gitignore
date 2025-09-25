@@ -1,3 +1,53 @@
+# Root ignores for this project (Angular frontend + Python backend)
+
+# Node/Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.cache/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+frontend/.env
+backend/.env
+
+# Python caches and virtual envs
+__pycache__/
+backend/__pycache__/
+.pytest_cache/
+backend/.pytest_cache/
+.mypy_cache/
+backend/.mypy_cache/
+.venv/
+venv/
+backend/.venv/
+backend/venv/
+.coverage
+backend/.coverage
+
+# Build artifacts
+build/
+backend/build/
+frontend/dist-*
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Generic cache
+.cache/
 backend/.venv/
 frontend/node_modules/
 frontend/dist/
